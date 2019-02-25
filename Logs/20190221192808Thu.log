@@ -1,0 +1,165 @@
+[2019-02-21 19:28:08 Thu] The location of the file output by the log:C:\Users\HP\PycharmProjects\HHTEST\venv\lib\site-packages\selenium\webdriver\remote\remote_connection.py 
+The name of the module generated under the current file is named: _request,The specific number of lines corresponding to the file is line 388,
+Corresponding log level is :[DEBUG]:POST http://127.0.0.1:63994/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"extensions": [], "args": []}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"extensions": [], "args": []}}}
+[2019-02-21 19:28:08 Thu] The location of the file output by the log:C:\Users\HP\PycharmProjects\HHTEST\venv\lib\site-packages\urllib3\connectionpool.py 
+The name of the module generated under the current file is named: _new_conn,The specific number of lines corresponding to the file is line 205,
+Corresponding log level is :[DEBUG]:Starting new HTTP connection (1): 127.0.0.1:63994
+[2019-02-21 19:28:11 Thu] The location of the file output by the log:C:\Users\HP\PycharmProjects\HHTEST\venv\lib\site-packages\urllib3\connectionpool.py 
+The name of the module generated under the current file is named: _make_request,The specific number of lines corresponding to the file is line 393,
+Corresponding log level is :[DEBUG]:http://127.0.0.1:63994 "POST /session HTTP/1.1" 200 826
+[2019-02-21 19:28:11 Thu] The location of the file output by the log:C:\Users\HP\PycharmProjects\HHTEST\venv\lib\site-packages\selenium\webdriver\remote\remote_connection.py 
+The name of the module generated under the current file is named: _request,The specific number of lines corresponding to the file is line 440,
+Corresponding log level is :[DEBUG]:Finished Request
+[2019-02-21 19:28:11 Thu] The location of the file output by the log:C:\Users\HP\PycharmProjects\HHTEST\venv\lib\site-packages\selenium\webdriver\remote\remote_connection.py 
+The name of the module generated under the current file is named: _request,The specific number of lines corresponding to the file is line 388,
+Corresponding log level is :[DEBUG]:POST http://127.0.0.1:63994/session/07ee51bd9156867916008ebcfc2e58a0/url {"url": "http://test.pro.testin.cn/account/login.htm", "sessionId": "07ee51bd9156867916008ebcfc2e58a0"}
+[2019-02-21 19:28:11 Thu] The location of the file output by the log:C:\Users\HP\PycharmProjects\HHTEST\venv\lib\site-packages\urllib3\connectionpool.py 
+The name of the module generated under the current file is named: _make_request,The specific number of lines corresponding to the file is line 393,
+Corresponding log level is :[DEBUG]:http://127.0.0.1:63994 "POST /session/07ee51bd9156867916008ebcfc2e58a0/url HTTP/1.1" 200 72
+[2019-02-21 19:28:11 Thu] The location of the file output by the log:C:\Users\HP\PycharmProjects\HHTEST\venv\lib\site-packages\selenium\webdriver\remote\remote_connection.py 
+The name of the module generated under the current file is named: _request,The specific number of lines corresponding to the file is line 440,
+Corresponding log level is :[DEBUG]:Finished Request
+[2019-02-21 19:28:11 Thu] The location of the file output by the log:C:\Users\HP\PycharmProjects\HHTEST\venv\lib\site-packages\selenium\webdriver\remote\remote_connection.py 
+The name of the module generated under the current file is named: _request,The specific number of lines corresponding to the file is line 388,
+Corresponding log level is :[DEBUG]:POST http://127.0.0.1:63994/session/07ee51bd9156867916008ebcfc2e58a0/window/current/maximize {"windowHandle": "current", "sessionId": "07ee51bd9156867916008ebcfc2e58a0"}
+[2019-02-21 19:28:12 Thu] The location of the file output by the log:C:\Users\HP\PycharmProjects\HHTEST\venv\lib\site-packages\urllib3\connectionpool.py 
+The name of the module generated under the current file is named: _make_request,The specific number of lines corresponding to the file is line 393,
+Corresponding log level is :[DEBUG]:http://127.0.0.1:63994 "POST /session/07ee51bd9156867916008ebcfc2e58a0/window/current/maximize HTTP/1.1" 200 72
+[2019-02-21 19:28:12 Thu] The location of the file output by the log:C:\Users\HP\PycharmProjects\HHTEST\venv\lib\site-packages\selenium\webdriver\remote\remote_connection.py 
+The name of the module generated under the current file is named: _request,The specific number of lines corresponding to the file is line 440,
+Corresponding log level is :[DEBUG]:Finished Request
+[2019-02-21 19:28:12 Thu] The location of the file output by the log:C:\Users\HP\PycharmProjects\HHTEST\venv\lib\site-packages\selenium\webdriver\remote\remote_connection.py 
+The name of the module generated under the current file is named: _request,The specific number of lines corresponding to the file is line 388,
+Corresponding log level is :[DEBUG]:POST http://127.0.0.1:63994/session/07ee51bd9156867916008ebcfc2e58a0/element {"using": "id", "value": "email", "sessionId": "07ee51bd9156867916008ebcfc2e58a0"}
+[2019-02-21 19:28:13 Thu] The location of the file output by the log:C:\Users\HP\PycharmProjects\HHTEST\venv\lib\site-packages\urllib3\connectionpool.py 
+The name of the module generated under the current file is named: _make_request,The specific number of lines corresponding to the file is line 393,
+Corresponding log level is :[DEBUG]:http://127.0.0.1:63994 "POST /session/07ee51bd9156867916008ebcfc2e58a0/element HTTP/1.1" 200 102
+[2019-02-21 19:28:13 Thu] The location of the file output by the log:C:\Users\HP\PycharmProjects\HHTEST\venv\lib\site-packages\selenium\webdriver\remote\remote_connection.py 
+The name of the module generated under the current file is named: _request,The specific number of lines corresponding to the file is line 440,
+Corresponding log level is :[DEBUG]:Finished Request
+[2019-02-21 19:28:13 Thu] The location of the file output by the log:C:\Users\HP\PycharmProjects\HHTEST\venv\lib\site-packages\selenium\webdriver\remote\remote_connection.py 
+The name of the module generated under the current file is named: _request,The specific number of lines corresponding to the file is line 388,
+Corresponding log level is :[DEBUG]:POST http://127.0.0.1:63994/session/07ee51bd9156867916008ebcfc2e58a0/element/0.8368287010288236-1/clear {"id": "0.8368287010288236-1", "sessionId": "07ee51bd9156867916008ebcfc2e58a0"}
+[2019-02-21 19:28:13 Thu] The location of the file output by the log:C:\Users\HP\PycharmProjects\HHTEST\venv\lib\site-packages\urllib3\connectionpool.py 
+The name of the module generated under the current file is named: _make_request,The specific number of lines corresponding to the file is line 393,
+Corresponding log level is :[DEBUG]:http://127.0.0.1:63994 "POST /session/07ee51bd9156867916008ebcfc2e58a0/element/0.8368287010288236-1/clear HTTP/1.1" 200 72
+[2019-02-21 19:28:13 Thu] The location of the file output by the log:C:\Users\HP\PycharmProjects\HHTEST\venv\lib\site-packages\selenium\webdriver\remote\remote_connection.py 
+The name of the module generated under the current file is named: _request,The specific number of lines corresponding to the file is line 440,
+Corresponding log level is :[DEBUG]:Finished Request
+[2019-02-21 19:28:13 Thu] The location of the file output by the log:C:\Users\HP\PycharmProjects\HHTEST\venv\lib\site-packages\selenium\webdriver\remote\remote_connection.py 
+The name of the module generated under the current file is named: _request,The specific number of lines corresponding to the file is line 388,
+Corresponding log level is :[DEBUG]:POST http://127.0.0.1:63994/session/07ee51bd9156867916008ebcfc2e58a0/element {"using": "id", "value": "email", "sessionId": "07ee51bd9156867916008ebcfc2e58a0"}
+[2019-02-21 19:28:13 Thu] The location of the file output by the log:C:\Users\HP\PycharmProjects\HHTEST\venv\lib\site-packages\urllib3\connectionpool.py 
+The name of the module generated under the current file is named: _make_request,The specific number of lines corresponding to the file is line 393,
+Corresponding log level is :[DEBUG]:http://127.0.0.1:63994 "POST /session/07ee51bd9156867916008ebcfc2e58a0/element HTTP/1.1" 200 102
+[2019-02-21 19:28:13 Thu] The location of the file output by the log:C:\Users\HP\PycharmProjects\HHTEST\venv\lib\site-packages\selenium\webdriver\remote\remote_connection.py 
+The name of the module generated under the current file is named: _request,The specific number of lines corresponding to the file is line 440,
+Corresponding log level is :[DEBUG]:Finished Request
+[2019-02-21 19:28:13 Thu] The location of the file output by the log:C:\Users\HP\PycharmProjects\HHTEST\venv\lib\site-packages\selenium\webdriver\remote\remote_connection.py 
+The name of the module generated under the current file is named: _request,The specific number of lines corresponding to the file is line 388,
+Corresponding log level is :[DEBUG]:POST http://127.0.0.1:63994/session/07ee51bd9156867916008ebcfc2e58a0/element/0.8368287010288236-1/value {"text": "chenhaodong@testin.cn", "value": ["c", "h", "e", "n", "h", "a", "o", "d", "o", "n", "g", "@", "t", "e", "s", "t", "i", "n", ".", "c", "n"], "id": "0.8368287010288236-1", "sessionId": "07ee51bd9156867916008ebcfc2e58a0"}
+[2019-02-21 19:28:13 Thu] The location of the file output by the log:C:\Users\HP\PycharmProjects\HHTEST\venv\lib\site-packages\urllib3\connectionpool.py 
+The name of the module generated under the current file is named: _make_request,The specific number of lines corresponding to the file is line 393,
+Corresponding log level is :[DEBUG]:http://127.0.0.1:63994 "POST /session/07ee51bd9156867916008ebcfc2e58a0/element/0.8368287010288236-1/value HTTP/1.1" 200 72
+[2019-02-21 19:28:13 Thu] The location of the file output by the log:C:\Users\HP\PycharmProjects\HHTEST\venv\lib\site-packages\selenium\webdriver\remote\remote_connection.py 
+The name of the module generated under the current file is named: _request,The specific number of lines corresponding to the file is line 440,
+Corresponding log level is :[DEBUG]:Finished Request
+[2019-02-21 19:28:14 Thu] The location of the file output by the log:C:\Users\HP\PycharmProjects\HHTEST\venv\lib\site-packages\selenium\webdriver\remote\remote_connection.py 
+The name of the module generated under the current file is named: _request,The specific number of lines corresponding to the file is line 388,
+Corresponding log level is :[DEBUG]:POST http://127.0.0.1:63994/session/07ee51bd9156867916008ebcfc2e58a0/element {"using": "id", "value": "pwd", "sessionId": "07ee51bd9156867916008ebcfc2e58a0"}
+[2019-02-21 19:28:14 Thu] The location of the file output by the log:C:\Users\HP\PycharmProjects\HHTEST\venv\lib\site-packages\urllib3\connectionpool.py 
+The name of the module generated under the current file is named: _make_request,The specific number of lines corresponding to the file is line 393,
+Corresponding log level is :[DEBUG]:http://127.0.0.1:63994 "POST /session/07ee51bd9156867916008ebcfc2e58a0/element HTTP/1.1" 200 102
+[2019-02-21 19:28:14 Thu] The location of the file output by the log:C:\Users\HP\PycharmProjects\HHTEST\venv\lib\site-packages\selenium\webdriver\remote\remote_connection.py 
+The name of the module generated under the current file is named: _request,The specific number of lines corresponding to the file is line 440,
+Corresponding log level is :[DEBUG]:Finished Request
+[2019-02-21 19:28:14 Thu] The location of the file output by the log:C:\Users\HP\PycharmProjects\HHTEST\venv\lib\site-packages\selenium\webdriver\remote\remote_connection.py 
+The name of the module generated under the current file is named: _request,The specific number of lines corresponding to the file is line 388,
+Corresponding log level is :[DEBUG]:POST http://127.0.0.1:63994/session/07ee51bd9156867916008ebcfc2e58a0/element/0.8368287010288236-2/clear {"id": "0.8368287010288236-2", "sessionId": "07ee51bd9156867916008ebcfc2e58a0"}
+[2019-02-21 19:28:14 Thu] The location of the file output by the log:C:\Users\HP\PycharmProjects\HHTEST\venv\lib\site-packages\urllib3\connectionpool.py 
+The name of the module generated under the current file is named: _make_request,The specific number of lines corresponding to the file is line 393,
+Corresponding log level is :[DEBUG]:http://127.0.0.1:63994 "POST /session/07ee51bd9156867916008ebcfc2e58a0/element/0.8368287010288236-2/clear HTTP/1.1" 200 72
+[2019-02-21 19:28:14 Thu] The location of the file output by the log:C:\Users\HP\PycharmProjects\HHTEST\venv\lib\site-packages\selenium\webdriver\remote\remote_connection.py 
+The name of the module generated under the current file is named: _request,The specific number of lines corresponding to the file is line 440,
+Corresponding log level is :[DEBUG]:Finished Request
+[2019-02-21 19:28:14 Thu] The location of the file output by the log:C:\Users\HP\PycharmProjects\HHTEST\venv\lib\site-packages\selenium\webdriver\remote\remote_connection.py 
+The name of the module generated under the current file is named: _request,The specific number of lines corresponding to the file is line 388,
+Corresponding log level is :[DEBUG]:POST http://127.0.0.1:63994/session/07ee51bd9156867916008ebcfc2e58a0/element {"using": "id", "value": "pwd", "sessionId": "07ee51bd9156867916008ebcfc2e58a0"}
+[2019-02-21 19:28:14 Thu] The location of the file output by the log:C:\Users\HP\PycharmProjects\HHTEST\venv\lib\site-packages\urllib3\connectionpool.py 
+The name of the module generated under the current file is named: _make_request,The specific number of lines corresponding to the file is line 393,
+Corresponding log level is :[DEBUG]:http://127.0.0.1:63994 "POST /session/07ee51bd9156867916008ebcfc2e58a0/element HTTP/1.1" 200 102
+[2019-02-21 19:28:14 Thu] The location of the file output by the log:C:\Users\HP\PycharmProjects\HHTEST\venv\lib\site-packages\selenium\webdriver\remote\remote_connection.py 
+The name of the module generated under the current file is named: _request,The specific number of lines corresponding to the file is line 440,
+Corresponding log level is :[DEBUG]:Finished Request
+[2019-02-21 19:28:14 Thu] The location of the file output by the log:C:\Users\HP\PycharmProjects\HHTEST\venv\lib\site-packages\selenium\webdriver\remote\remote_connection.py 
+The name of the module generated under the current file is named: _request,The specific number of lines corresponding to the file is line 388,
+Corresponding log level is :[DEBUG]:POST http://127.0.0.1:63994/session/07ee51bd9156867916008ebcfc2e58a0/element/0.8368287010288236-2/value {"text": "123456", "value": ["1", "2", "3", "4", "5", "6"], "id": "0.8368287010288236-2", "sessionId": "07ee51bd9156867916008ebcfc2e58a0"}
+[2019-02-21 19:28:14 Thu] The location of the file output by the log:C:\Users\HP\PycharmProjects\HHTEST\venv\lib\site-packages\urllib3\connectionpool.py 
+The name of the module generated under the current file is named: _make_request,The specific number of lines corresponding to the file is line 393,
+Corresponding log level is :[DEBUG]:http://127.0.0.1:63994 "POST /session/07ee51bd9156867916008ebcfc2e58a0/element/0.8368287010288236-2/value HTTP/1.1" 200 72
+[2019-02-21 19:28:14 Thu] The location of the file output by the log:C:\Users\HP\PycharmProjects\HHTEST\venv\lib\site-packages\selenium\webdriver\remote\remote_connection.py 
+The name of the module generated under the current file is named: _request,The specific number of lines corresponding to the file is line 440,
+Corresponding log level is :[DEBUG]:Finished Request
+[2019-02-21 19:28:15 Thu] The location of the file output by the log:C:\Users\HP\PycharmProjects\HHTEST\venv\lib\site-packages\selenium\webdriver\remote\remote_connection.py 
+The name of the module generated under the current file is named: _request,The specific number of lines corresponding to the file is line 388,
+Corresponding log level is :[DEBUG]:POST http://127.0.0.1:63994/session/07ee51bd9156867916008ebcfc2e58a0/element {"using": "id", "value": "submitBtn", "sessionId": "07ee51bd9156867916008ebcfc2e58a0"}
+[2019-02-21 19:28:15 Thu] The location of the file output by the log:C:\Users\HP\PycharmProjects\HHTEST\venv\lib\site-packages\urllib3\connectionpool.py 
+The name of the module generated under the current file is named: _make_request,The specific number of lines corresponding to the file is line 393,
+Corresponding log level is :[DEBUG]:http://127.0.0.1:63994 "POST /session/07ee51bd9156867916008ebcfc2e58a0/element HTTP/1.1" 200 102
+[2019-02-21 19:28:15 Thu] The location of the file output by the log:C:\Users\HP\PycharmProjects\HHTEST\venv\lib\site-packages\selenium\webdriver\remote\remote_connection.py 
+The name of the module generated under the current file is named: _request,The specific number of lines corresponding to the file is line 440,
+Corresponding log level is :[DEBUG]:Finished Request
+[2019-02-21 19:28:15 Thu] The location of the file output by the log:C:\Users\HP\PycharmProjects\HHTEST\venv\lib\site-packages\selenium\webdriver\remote\remote_connection.py 
+The name of the module generated under the current file is named: _request,The specific number of lines corresponding to the file is line 388,
+Corresponding log level is :[DEBUG]:POST http://127.0.0.1:63994/session/07ee51bd9156867916008ebcfc2e58a0/element/0.8368287010288236-3/click {"id": "0.8368287010288236-3", "sessionId": "07ee51bd9156867916008ebcfc2e58a0"}
+[2019-02-21 19:28:16 Thu] The location of the file output by the log:C:\Users\HP\PycharmProjects\HHTEST\venv\lib\site-packages\urllib3\connectionpool.py 
+The name of the module generated under the current file is named: _make_request,The specific number of lines corresponding to the file is line 393,
+Corresponding log level is :[DEBUG]:http://127.0.0.1:63994 "POST /session/07ee51bd9156867916008ebcfc2e58a0/element/0.8368287010288236-3/click HTTP/1.1" 200 72
+[2019-02-21 19:28:16 Thu] The location of the file output by the log:C:\Users\HP\PycharmProjects\HHTEST\venv\lib\site-packages\selenium\webdriver\remote\remote_connection.py 
+The name of the module generated under the current file is named: _request,The specific number of lines corresponding to the file is line 440,
+Corresponding log level is :[DEBUG]:Finished Request
+[2019-02-21 19:28:19 Thu] The location of the file output by the log:C:\Users\HP\PycharmProjects\HHTEST\venv\lib\site-packages\selenium\webdriver\remote\remote_connection.py 
+The name of the module generated under the current file is named: _request,The specific number of lines corresponding to the file is line 388,
+Corresponding log level is :[DEBUG]:POST http://127.0.0.1:63994/session/07ee51bd9156867916008ebcfc2e58a0/element {"using": "class name", "value": "dropdown-btn", "sessionId": "07ee51bd9156867916008ebcfc2e58a0"}
+[2019-02-21 19:28:19 Thu] The location of the file output by the log:C:\Users\HP\PycharmProjects\HHTEST\venv\lib\site-packages\urllib3\connectionpool.py 
+The name of the module generated under the current file is named: _make_request,The specific number of lines corresponding to the file is line 393,
+Corresponding log level is :[DEBUG]:http://127.0.0.1:63994 "POST /session/07ee51bd9156867916008ebcfc2e58a0/element HTTP/1.1" 200 103
+[2019-02-21 19:28:19 Thu] The location of the file output by the log:C:\Users\HP\PycharmProjects\HHTEST\venv\lib\site-packages\selenium\webdriver\remote\remote_connection.py 
+The name of the module generated under the current file is named: _request,The specific number of lines corresponding to the file is line 440,
+Corresponding log level is :[DEBUG]:Finished Request
+[2019-02-21 19:28:19 Thu] The location of the file output by the log:C:\Users\HP\PycharmProjects\HHTEST\venv\lib\site-packages\selenium\webdriver\remote\remote_connection.py 
+The name of the module generated under the current file is named: _request,The specific number of lines corresponding to the file is line 388,
+Corresponding log level is :[DEBUG]:POST http://127.0.0.1:63994/session/07ee51bd9156867916008ebcfc2e58a0/element/0.10573505324345889-1/click {"id": "0.10573505324345889-1", "sessionId": "07ee51bd9156867916008ebcfc2e58a0"}
+[2019-02-21 19:28:19 Thu] The location of the file output by the log:C:\Users\HP\PycharmProjects\HHTEST\venv\lib\site-packages\urllib3\connectionpool.py 
+The name of the module generated under the current file is named: _make_request,The specific number of lines corresponding to the file is line 393,
+Corresponding log level is :[DEBUG]:http://127.0.0.1:63994 "POST /session/07ee51bd9156867916008ebcfc2e58a0/element/0.10573505324345889-1/click HTTP/1.1" 200 72
+[2019-02-21 19:28:19 Thu] The location of the file output by the log:C:\Users\HP\PycharmProjects\HHTEST\venv\lib\site-packages\selenium\webdriver\remote\remote_connection.py 
+The name of the module generated under the current file is named: _request,The specific number of lines corresponding to the file is line 440,
+Corresponding log level is :[DEBUG]:Finished Request
+[2019-02-21 19:28:19 Thu] The location of the file output by the log:C:\Users\HP\PycharmProjects\HHTEST\venv\lib\site-packages\selenium\webdriver\remote\remote_connection.py 
+The name of the module generated under the current file is named: _request,The specific number of lines corresponding to the file is line 388,
+Corresponding log level is :[DEBUG]:POST http://127.0.0.1:63994/session/07ee51bd9156867916008ebcfc2e58a0/element {"using": "xpath", "value": "//*[@id=\"page-menu\"]/div/nav/div/div/div/div/div/form/ul/li[1]", "sessionId": "07ee51bd9156867916008ebcfc2e58a0"}
+[2019-02-21 19:28:19 Thu] The location of the file output by the log:C:\Users\HP\PycharmProjects\HHTEST\venv\lib\site-packages\urllib3\connectionpool.py 
+The name of the module generated under the current file is named: _make_request,The specific number of lines corresponding to the file is line 393,
+Corresponding log level is :[DEBUG]:http://127.0.0.1:63994 "POST /session/07ee51bd9156867916008ebcfc2e58a0/element HTTP/1.1" 200 103
+[2019-02-21 19:28:19 Thu] The location of the file output by the log:C:\Users\HP\PycharmProjects\HHTEST\venv\lib\site-packages\selenium\webdriver\remote\remote_connection.py 
+The name of the module generated under the current file is named: _request,The specific number of lines corresponding to the file is line 440,
+Corresponding log level is :[DEBUG]:Finished Request
+[2019-02-21 19:28:19 Thu] The location of the file output by the log:C:\Users\HP\PycharmProjects\HHTEST\venv\lib\site-packages\selenium\webdriver\remote\remote_connection.py 
+The name of the module generated under the current file is named: _request,The specific number of lines corresponding to the file is line 388,
+Corresponding log level is :[DEBUG]:POST http://127.0.0.1:63994/session/07ee51bd9156867916008ebcfc2e58a0/element/0.10573505324345889-2/click {"id": "0.10573505324345889-2", "sessionId": "07ee51bd9156867916008ebcfc2e58a0"}
+[2019-02-21 19:28:19 Thu] The location of the file output by the log:C:\Users\HP\PycharmProjects\HHTEST\venv\lib\site-packages\urllib3\connectionpool.py 
+The name of the module generated under the current file is named: _make_request,The specific number of lines corresponding to the file is line 393,
+Corresponding log level is :[DEBUG]:http://127.0.0.1:63994 "POST /session/07ee51bd9156867916008ebcfc2e58a0/element/0.10573505324345889-2/click HTTP/1.1" 200 72
+[2019-02-21 19:28:19 Thu] The location of the file output by the log:C:\Users\HP\PycharmProjects\HHTEST\venv\lib\site-packages\selenium\webdriver\remote\remote_connection.py 
+The name of the module generated under the current file is named: _request,The specific number of lines corresponding to the file is line 440,
+Corresponding log level is :[DEBUG]:Finished Request
+[2019-02-21 19:28:22 Thu] The location of the file output by the log:C:\Users\HP\PycharmProjects\HHTEST\venv\lib\site-packages\selenium\webdriver\remote\remote_connection.py 
+The name of the module generated under the current file is named: _request,The specific number of lines corresponding to the file is line 388,
+Corresponding log level is :[DEBUG]:DELETE http://127.0.0.1:63994/session/07ee51bd9156867916008ebcfc2e58a0 {"sessionId": "07ee51bd9156867916008ebcfc2e58a0"}
+[2019-02-21 19:28:22 Thu] The location of the file output by the log:C:\Users\HP\PycharmProjects\HHTEST\venv\lib\site-packages\urllib3\connectionpool.py 
+The name of the module generated under the current file is named: _make_request,The specific number of lines corresponding to the file is line 393,
+Corresponding log level is :[DEBUG]:http://127.0.0.1:63994 "DELETE /session/07ee51bd9156867916008ebcfc2e58a0 HTTP/1.1" 200 72
+[2019-02-21 19:28:22 Thu] The location of the file output by the log:C:\Users\HP\PycharmProjects\HHTEST\venv\lib\site-packages\selenium\webdriver\remote\remote_connection.py 
+The name of the module generated under the current file is named: _request,The specific number of lines corresponding to the file is line 440,
+Corresponding log level is :[DEBUG]:Finished Request
