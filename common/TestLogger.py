@@ -18,7 +18,7 @@ class TestLogger(object):
         time_stamp_name = time.strftime("%Y%m%d%H%M%S%a", time.localtime())
         log_name = time_stamp_name + ".log"
         # logs 文件路径
-        log_dir_path=log_dir_path+"\\Logs\\"
+        log_dir_path=log_dir_path+""
         self.log_path = os.path.join(log_dir_path, log_name)
         # logs 文件输出格式
         self.log_format = "[%(asctime)s] The location of the file output by the log:%(pathname)s \nThe name of the " \
