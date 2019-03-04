@@ -16,6 +16,10 @@ class testlogin(unittest.TestCase):
         #执行登录功能
         LoginPage(self.driver).Login()
         HomePage_one(self.driver).choise_project()
+        HomePage_one(self.driver).appmanage()
+
+
+
         sleep(3)
     @classmethod
     def tearDownClass(cls):

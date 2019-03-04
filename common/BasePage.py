@@ -1,13 +1,11 @@
 from selenium.common.exceptions import NoSuchElementException
-from common.TestLogger import TestLogger
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.action_chains import ActionChains
-import os
 class Page(object):
     #print("-------------------------------"+os.getcwd())
     w=r"C:\Users\HP\PycharmProjects\itestin_web_tencent\logs"
    # print(w)
-    logs =TestLogger(w).console_log()
+    #logs =TestLogger(w).console_log()
     #初始化driver
     def __init__(self,driver):
         # self.url="http://test.pro.testin.cn/account/login.htm"
@@ -17,7 +15,7 @@ class Page(object):
        # self.driver =webdriver.Chrome()
     #封装打开网页功能
     def open(self):
-        self.driver.get("http://test.pro.testin.cn/account/login.htm")
+        self.driver.get("http://test.pro.testin.cn")
         self.driver.maximize_window()
     # 封装定位器查找元素功能
     def find_element(self,*loc):
@@ -126,3 +124,6 @@ class Page(object):
                 ActionChains(self.driver).double_click(element).perform()
             except NoSuchElementException as e:
                 print("未找到%s" %value)
+
+    def get_testin_web_url(self):
+       return self.driver.current_url
