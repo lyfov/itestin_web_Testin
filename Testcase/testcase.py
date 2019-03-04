@@ -16,7 +16,7 @@ class testlogin(unittest.TestCase):
     def setUpClass(cls):
         print('start')
         #单例模式，保证使用同一个driver
-        # if cls.driver is None:
+        # if cls.driver is None :
         cls.driver = webdriver.Chrome()
         #执行测试用例
     @data(*excel.getDataFromSheet())
