@@ -2,8 +2,15 @@ from Pages.LoginPage import *
 from Pages.HomePage import *
 from selenium import webdriver
 import unittest
+from ddt import ddt,data
 
+from common.ExcelUtil import ParseExcel
+
+
+
+@ddt
 class testlogin(unittest.TestCase):
+    excel = ParseExcel("C:\\Users\\HP\\Desktop\\1.xlsx", "Sheet1")
     driver = None
     @classmethod
     def setUpClass(cls):
@@ -12,9 +19,12 @@ class testlogin(unittest.TestCase):
         # if cls.driver is None:
         cls.driver = webdriver.Chrome()
         #执行测试用例
-    def test_login1(self):
+    @data(*excel.getDataFromSheet())
+    def test_login1(self,data):
+
+
         #执行登录功能
-        LoginPage(self.driver).Login()
+        LoginPage(self.driver,data['username'],data['password']).Login()
         HomePage_one(self.driver).choise_project()
         HomePage_one(self.driver).appmanage()
 
