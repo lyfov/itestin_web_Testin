@@ -31,7 +31,7 @@ class HomePage_one(Page):
     #点击应用管理
     def appmanage(self):
         try:
-            #sleep(5)
+            sleep(5)
             #element = WebDriverWait(self.driver,10).until(self.driver.find_element(*self.appmanage_loc))
             #print(lambda driver:self.find_element(*self.appmanage_loc)
             element=self.find_element(*self.appmanage_loc)

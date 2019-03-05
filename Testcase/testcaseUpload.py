@@ -1,15 +1,16 @@
 from Pages.LoginPage import *
 from Pages.HomePage import *
+from Pages.AppMangerPage import *
 from selenium import webdriver
 import unittest
 from ddt import ddt,data
 
 from common.ExcelUtil import ParseExcel
-import os
+
 
 
 @ddt
-class testlogin(unittest.TestCase):
+class testlogin2(unittest.TestCase):
     excel = ParseExcel("C:\\Users\\HP\\Desktop\\1.xlsx", "Sheet1")
     driver = None
     @classmethod
@@ -20,9 +21,8 @@ class testlogin(unittest.TestCase):
         cls.driver = webdriver.Chrome()
         #执行测试用例
         #dada接收方法中返回的数据，是一个列表的形式
-        print(os.getcwd())
     @data(*excel.getDataFromSheet())
-    def test_login1(self,data):
+    def test_upload(self,data):
 
 
         # 执行登录功能
@@ -30,6 +30,11 @@ class testlogin(unittest.TestCase):
         LoginPage(self.driver,data['username'],data['password']).Login()
         HomePage_one(self.driver).choise_project()
         HomePage_one(self.driver).appmanage()
+        AppMangerPage(self.driver).upload_click()
+        AppMangerPage(self.driver).upload_app_byname(u"D:\\迅雷下载\\82bbe3c6-8c37-4d65-adee-cf1acfcfc5fd.apk")
+        sleep(5)
+
+
 
 
 
