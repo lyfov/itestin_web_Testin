@@ -2,11 +2,14 @@ import unittest
 import HTMLTestRunner
 import os
 from Testcase.testcase import testlogin
-
+from Testcase.testddt import *
+from Testcase.testcaseUpload import *
 import time
 
 suite1 = unittest.TestLoader().loadTestsFromTestCase(testlogin)
-suite = unittest.TestSuite([suite1])
+suite2 = unittest.TestLoader().loadTestsFromTestCase(testlogin2)
+suite3 = unittest.TestLoader().loadTestsFromTestCase(test1)
+suite = unittest.TestSuite([suite1,suite2,suite3])
 filename1 = os.getcwd()+"\\"+"Reports\\"
 # print(filename1)
 filename = filename1+ time.strftime('%Y%m%d%H%M%S',time.localtime(time.time()))
