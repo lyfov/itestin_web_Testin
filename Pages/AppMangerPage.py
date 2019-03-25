@@ -8,6 +8,10 @@ class AppMangerPage(Page):
     first_upload_loc =(By.XPATH,'//span/a[contains(text(),"上传应用")]')
     second_upload_loc=(By.XPATH,'//button[contains(text(),"上传应用")]')
     button_sub_loc=(By.XPATH,'//div/button[contains(text(),"提交")]')
+    name_select_loc=(By.XPATH,'//button/span[contains(text(),"请选择应用名称")]')
+    name_input_loc=(By.XPATH,'//*[@id="search-form"]/div[1]/div/div/div/input')
+    name_text_loc=(By.XPATH,'//*[@id="search-form"]/div[1]/div/div/ul/li[2]/a/span[1]')
+    w=(By.CLASS_NAME,'page-main')
 
 
     def __init__(self, driver):
@@ -38,3 +42,13 @@ class AppMangerPage(Page):
         self.driver.find_element_by_name("file").send_keys(filename)
 
         WebDriverWait(self.driver,100).until(lambda s:s.find_element(*self.button_sub_loc))
+
+    #筛选功能
+    def selectByAppName(self,name="熊猫直播"):
+        sleep(3)
+        self.find_element(*self.name_select_loc).click()
+        sleep(3)
+        self.find_element(*self.name_input_loc).send_keys(name)
+        sleep(3)
+        self.clickEnterNoElement()
+

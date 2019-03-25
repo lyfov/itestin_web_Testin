@@ -22,6 +22,7 @@ class LoginPage(Page):
         self.find_element(*self.username_loc).clear()
         self.find_element(*self.username_loc).send_keys(self.username)
         sleep(1)
+    
     #输入密码
     def input_pwd(self):
         self.find_element(*self.pwd_loc).clear()

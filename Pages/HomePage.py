@@ -22,12 +22,14 @@ class HomePage_one(Page):
         element=self.find_element(*self.project_loc)
         print("找到按钮了")
         element.click()
-
+    def get_current_url(self):
+        self.driver.getcurrent_url()
     #切换目标的项目组
     def choise_project(self):
         self.click_project()
         print("-------")
         self.select_value_xpath(self.toprject_loc)
+
     #点击应用管理
     def appmanage(self):
         try:
@@ -38,7 +40,7 @@ class HomePage_one(Page):
             sleep(5)
             element.click()
             print("点击完成")
-            print(self.get_testin_web_url())
+            print(self.getcurrent_url())
         except NoSuchElementException as e:
             print("未找到元素 应用管理")
 
