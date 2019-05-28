@@ -11,6 +11,5 @@ class test1(unittest.TestCase):
     def testda(self,data):
 
         print(data['username'],data['password'])
-
 if __name__ == "__main__":
      unittest.main()

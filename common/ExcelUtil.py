@@ -24,13 +24,11 @@ class ParseExcel(object):
                         app['username'] = line[0].value
                         # 设置字典的第二列数据为password
                         app['password'] = line[1].value
+                        app['tag_message'] = line[2].value
+
+
                         #把字典放在列表中
                         datalist.append(app)
-
-                        # tmplist = []
-                        # tmplist.append(line[1].value)
-                        # tmplist.append(line[2].value)
-                        # datalist.append(tmplist)
                    #返回一个列表，里面包含了字典
                 return datalist
 

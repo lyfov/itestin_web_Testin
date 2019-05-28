@@ -13,9 +13,7 @@ import pysnooper
 from common.configRead import configRead
 
 @ddt
-class testForUpload(unittest.TestCase):
-    excel = ParseExcel("C:\\Users\\HP\\Desktop\\1.xlsx", "Sheet1")
-    driver = None
+class testDeleteApp(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         print('start')
@@ -32,11 +30,13 @@ class testForUpload(unittest.TestCase):
         HomePage_one(self.driver).choise_project()
         #主页进入应用列表
         HomePage_one(self.driver).appmanage()
-        #应用管理页面点击上传
-        AppMangerPage(self.driver).upload_click()
-        #上传所选择的应用
-        AppMangerPage(self.driver).upload_app_byname(u"D:\\1.apk")
-        sleep(5)
+        #应用管理页面查找应用
+        AppMangerPage(self.driver).selectByAppName("涨乐财富通")
+        #删除应用
+        AppMangerPage(self.driver).DeleteApp("涨乐财富通")
+        #断言是否删除成功
+        self.assertEqual(AppMangerPage(self.driver).Get_Alert_message(),"删除成功","删除失败了~~~~~~~~~~")
+
 
 
 

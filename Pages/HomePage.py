@@ -36,6 +36,7 @@ class HomePage_one(Page):
             sleep(5)
             #element = WebDriverWait(self.driver,10).until(self.driver.find_element(*self.appmanage_loc))
             #print(lambda driver:self.find_element(*self.appmanage_loc)
+
             element=self.find_element(*self.appmanage_loc)
             sleep(5)
             element.click()

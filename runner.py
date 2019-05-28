@@ -1,14 +1,16 @@
 import unittest
 import HTMLTestRunner
 import os
-from Testcase.testcase import testlogin
+from Testcase.testForLogin import *
 from Testcase.testddt import *
 from Testcase.testcaseUpload import *
+from Testcase.testDeleteAPP import testDeleteApp
 import time
 
+
 suite1 = unittest.TestLoader().loadTestsFromTestCase(testlogin)
-suite2 = unittest.TestLoader().loadTestsFromTestCase(testlogin2)
-suite3 = unittest.TestLoader().loadTestsFromTestCase(test1)
+suite2 = unittest.TestLoader().loadTestsFromTestCase(testForUpload)
+suite3 = unittest.TestLoader().loadTestsFromTestCase(testDeleteApp)
 suite = unittest.TestSuite([suite1,suite2,suite3])
 filename1 = os.getcwd()+"\\"+"Reports\\"
 # print(filename1)

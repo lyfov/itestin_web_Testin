@@ -9,6 +9,7 @@ class Get_curr_alllink():
         opener = urllib.request.build_opener()
         opener.addheaders = [headers]
         urllib.request.install_opener(opener)
+        #赋值当前页面的url
         file = urllib.request.urlopen(self.driver.current_url).read()
         file = file.decode('utf-8')
         pattern = '(http?://[^\s)";]+(\.(\w|/)*))'
