@@ -1,10 +1,10 @@
 import unittest
 import HTMLTestRunner
 import os
-from Testcase.testForLogin import *
-from Testcase.testddt import *
-from Testcase.testcaseUpload import *
-from Testcase.testDeleteAPP import testDeleteApp
+from Test_case.testForLogin import *
+from Test_case.testddt import *
+from Test_case.testcaseUpload import *
+from Test_case.Test_DeleteAPP import testDeleteApp
 import time
 
 
