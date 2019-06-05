@@ -29,9 +29,7 @@ class AppMangerPage(Page):
         try:
             self.driver.find_element(*self.first_upload_loc).is_displayed()
             self.find_element(*self.first_upload_loc)
-
-
-        except:
+        except NoSuchElementException as e:
             print("没找到超链接元素")
         finally:
             #点击右上角上传
