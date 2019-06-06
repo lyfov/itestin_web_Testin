@@ -12,6 +12,10 @@ class HomePage_one(Page):
     toprject_loc ='//*[@id="page-menu"]/div/nav/div/div/div/div/div/form/ul/li[1]'
     #应用管理loc
     appmanage_loc =(By.XPATH,'//span[contains(text(),"应用管理")]')
+    #自动化管理定位器
+    auto_manager_loc=(By.XPATH,'//*[@id="page-menu"]/div/nav/div/ul/li[3]/a/span')
+    #脚本管理定位器
+    scripy_home_loc=(By.XPATH,'//*[@id="page-menu"]/div/nav/div/ul/li[3]/ul/li/a')
 
 
     def __init__(self,driver):
@@ -44,8 +48,12 @@ class HomePage_one(Page):
             print(self.getcurrent_url())
         except NoSuchElementException as e:
             print("未找到元素 应用管理")
+    #点击脚本管理
+    def click_auto_script(self):
+        self.driver.find_element(*self.auto_manager_loc).click()
 
+        sleep(2)
 
-
+        self.driver.find_element(*self.scripy_home_loc).click()
 
 

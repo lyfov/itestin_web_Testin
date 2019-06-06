@@ -7,7 +7,7 @@ import pytest
 import pysnooper
 from common.configRead import configRead
 
-class est_DeleteApp():
+class Test_DeleteApp():
     @pytest.fixture(scope="class")
     def driver(self):
         driver = webdriver.Chrome()
@@ -16,7 +16,7 @@ class est_DeleteApp():
         self.driver.close()
         return self.driver
     @pysnooper.snoop()
-    def test_upload(self,driver):
+    def Test_Deleteapp(self,driver):
         #登录
         LoginPage(driver, configRead().read_username(), configRead().read_pwd()).Login()
         #主页选择项目组
