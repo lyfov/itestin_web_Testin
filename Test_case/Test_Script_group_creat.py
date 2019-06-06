@@ -49,18 +49,6 @@ class Test_Script_group_creat():
         assert ScriptManagerPage(driver).Get_Alert_message() == "操作成功"
     #修改脚本组
     def test_updata_group(self, driver):
-        # LoginPage(driver, configRead().read_username(), configRead().read_pwd()).Login()
-        # # 主页选择项目组
-        # HomePage_one(driver).choise_project()
-        # sleep(3)
-        # # 点击脚本管理
-        # HomePage_one(driver).click_auto_script()
-        #
-        # sleep(3)
-        # # 点击脚本组tab
-        # ScriptManagerPage(driver).click_scrpt_group_tab()
-        # sleep(3)
-        # 点击第一个脚本组的修改
         ScriptManagerPage(driver).click_first_updata()
         sleep(3)
         # 输入脚本组名称
@@ -75,3 +63,11 @@ class Test_Script_group_creat():
         # 点击创建
         ScriptManagerPage(driver).click_upadata_success()
         assert ScriptManagerPage(driver).Get_Alert_message() == "操作成功"
+        # 删除脚本组
+
+    def test_Remove_Group(self, driver):
+        ScriptManagerPage(driver).click_Delete_Forst()
+        sleep(3)
+        # 输入脚本组名称
+        ScriptManagerPage(driver).click_Remove_Confirm()
+        assert ScriptManagerPage(driver).Get_Alert_message()=="删除成功"

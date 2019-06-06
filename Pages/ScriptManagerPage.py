@@ -21,6 +21,10 @@ class ScriptManagerPage(Page):
     update_one_loc=(By.XPATH,'//*[@id="mainTable"]/tbody/tr[2]/td[7]/a[2]')
     #修改弹层中的修改确认按钮
     update_success_loc=(By.XPATH,'//div/button[text()="修改" and @type="button"]')
+    #第一个脚本组的删除按钮
+    delete_group_first_loc=(By.XPATH,'//*[@id="mainTable"]/tbody/tr[2]/td[7]/a[1]')
+    #删除的确认按钮
+    delete_confirm_loc=(By.XPATH,'//button[text()="确认"]')
     def __init__(self, driver):
         self.driver = driver
         # self.driver=webdriver.Chrome()
@@ -98,4 +102,16 @@ class ScriptManagerPage(Page):
         print("========>>>>>>等待点击创建按钮")
         self.element = WebDriverWait(self.driver, 10, 0.5).until(
             EC.presence_of_element_located(self.update_success_loc))
+        self.element.click()
+        #点击第一个脚本组的删除按钮
+    def click_Delete_Forst(self):
+        print("========>>>>>>等待点击创建按钮")
+        self.element = WebDriverWait(self.driver, 10, 0.5).until(
+            EC.presence_of_element_located(self.delete_group_first_loc))
+        self.element.click()
+       #点击删除确认按钮
+    def click_Remove_Confirm(self):
+        print("========>>>>>>等待点击创建按钮")
+        self.element = WebDriverWait(self.driver, 10, 0.5).until(
+            EC.presence_of_element_located(self.delete_confirm_loc))
         self.element.click()
