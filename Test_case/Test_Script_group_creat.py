@@ -26,27 +26,28 @@ class Test_Script_group_creat():
         HomePage_one(driver).click_auto_script()
 
         sleep(3)
+        for i in range(1,100):
         # 点击脚本组tab
-        ScriptManagerPage(driver).click_scrpt_group_tab()
-        sleep(3)
-        #点击创建脚本组
-        ScriptManagerPage(driver).click_creat_scrpt_group()
-        sleep(3)
-        #输入脚本组名称
-        ScriptManagerPage(driver).input_description_value("asdadasdasd")
-        sleep(3)
-        #添加两个脚本
-        ScriptManagerPage(driver).add_button_twice()
-        sleep(3)
-        #点击已添加
-        ScriptManagerPage(driver).click_added()
-        sleep(3)
-        ScriptManagerPage(driver).click_ALL_clear()
-        sleep(3)
+            ScriptManagerPage(driver).click_scrpt_group_tab()
+            sleep(3)
+            #点击创建脚本组
+            ScriptManagerPage(driver).click_creat_scrpt_group()
+            sleep(3)
+            #输入脚本组名称
+            ScriptManagerPage(driver).input_description_value("asdadasdasd")
+            sleep(3)
+            #添加两个脚本
+            ScriptManagerPage(driver).add_button_twice()
+            sleep(3)
+            #点击已添加
+            ScriptManagerPage(driver).click_added()
+            sleep(3)
+            ScriptManagerPage(driver).click_ALL_clear()
+            sleep(3)
 
-        #点击创建
-        ScriptManagerPage(driver).click_success_creat()
-        assert ScriptManagerPage(driver).Get_Alert_message() == "操作成功"
+            #点击创建
+            ScriptManagerPage(driver).click_success_creat()
+            assert ScriptManagerPage(driver).Get_Alert_message() == "操作成功"
     #修改脚本组
     def test_updata_group(self, driver):
         ScriptManagerPage(driver).click_first_updata()
