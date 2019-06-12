@@ -10,12 +10,7 @@ class Page(object):
    # print(w)
     #logs =TestLogger(w).console_log()
     #初始化driver
-    def __init__(self,driver):
-        # self.url="http://test.pro.testin.cn/account/login.htm"
-        self.driver = driver
 
-        # self.driver =webdriver.Chrome()
-        # self.driver.find_element_by_id("email").
 
     #封装打开网页功能
     def open(self):

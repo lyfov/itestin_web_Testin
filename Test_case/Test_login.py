@@ -14,14 +14,14 @@ import os
 class Test_ForLogin():
     @pytest.fixture(scope="class")
     def driver(self):
-        driver=webdriver.Chrome()
-        self.driver=driver
+        print("========================================")
+        self.driver = webdriver.Chrome()
         yield self.driver
         self.driver.close()
-        return  self.driver
+        return self.driver
     excel = ParseExcel("C:\\Users\\HP\\Desktop\\1.xlsx", "Sheet1")
     @pytest.mark.parametrize("username,password,tag_message",excel.getDataFromSheet())
-    def test_login(self,username,password,tag_message,driver):
+    def test_login(self,driver,username,password,tag_message):
         print(username)
         # print(data['username'])
         login = LoginPage(driver, username, password)

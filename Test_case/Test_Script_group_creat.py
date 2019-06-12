@@ -9,14 +9,14 @@ from Pages.ScriptManagerPage import ScriptManagerPage
 class Test_Script_group_creat():
     @pytest.fixture(scope="class")
     def driver(self):
-        driver = webdriver.Chrome()
-        self.driver = driver
+        print("========================================")
+        self.driver = webdriver.Chrome()
         yield self.driver
         self.driver.close()
         return self.driver
     @pysnooper.snoop(r'C:\Users\HP\Desktop\1.log')
     @allure.step("创建脚本组选择清除数据")
-    def test_creat_group(self, driver):
+    def test_creat_group(self,driver):
 
         LoginPage(driver, configRead().read_username(), configRead().read_pwd()).Login()
         # 主页选择项目组

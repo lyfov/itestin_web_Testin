@@ -10,14 +10,15 @@ from common.configRead import configRead
 class Test_DeleteApp():
     @pytest.fixture(scope="class")
     def driver(self):
-        driver = webdriver.Chrome()
-        self.driver = driver
+        print("========================================")
+        self.driver = webdriver.Chrome()
         yield self.driver
         self.driver.close()
         return self.driver
     @pysnooper.snoop()
-    def Test_Deleteapp(self,driver):
+    def test_Deleteapp(self,driver):
         #登录
+        print(driver)
         LoginPage(driver, configRead().read_username(), configRead().read_pwd()).Login()
         #主页选择项目组
         HomePage_one(driver).choise_project()
@@ -25,7 +26,7 @@ class Test_DeleteApp():
         HomePage_one(driver).appmanage()
         #应用管理页面查找应用
         AppMangerPage(driver).selectByAppName("涨乐财富通")
-        #删除应用
+        #9
         AppMangerPage(driver).DeleteApp("涨乐财富通")
         #断言是否删除成功
-        self.assertEqual(AppMangerPage(driver).Get_Alert_message(),"删除成功","删除失败了~~~~~~~~~~")
+        assert AppMangerPage(self.driver).Get_Alert_message()=="删除成功"
