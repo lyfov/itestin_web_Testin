@@ -5,13 +5,7 @@ from Pages.HomePage import *
 from Pages.AppMangerPage import *
 from common.configRead import configRead
 class Test_upload():
-    @pytest.fixture(scope="class")
-    def driver(self):
-        print("========================================")
-        self.driver = webdriver.Chrome()
-        yield self.driver
-        self.driver.close()
-        return self.driver
+    @pytest.mark.skip()
     def test_upload(self,driver):
         LoginPage(driver,configRead().read_username(), configRead().read_pwd()).Login()
         # 主页选择项目组

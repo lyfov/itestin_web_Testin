@@ -8,14 +8,8 @@ import pysnooper
 from common.configRead import configRead
 
 class Test_DeleteApp():
-    @pytest.fixture(scope="class")
-    def driver(self):
-        print("========================================")
-        self.driver = webdriver.Chrome()
-        yield self.driver
-        self.driver.close()
-        return self.driver
     @pysnooper.snoop()
+    @pytest.mark.skip()
     def test_Deleteapp(self,driver):
         #登录
         print(driver)
