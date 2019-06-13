@@ -76,7 +76,7 @@ class ScriptManagerPage(Page):
             print("未找到已添加按钮")
     #点击弹窗的创建按钮
     def click_success_creat(self):
-        print("========>>>>>>等待点击创建按钮")
+        print("========>>>>>>等待点击弹窗的创建按钮")
         self.element=WebDriverWait(self.driver,10,0.5).until(EC.presence_of_element_located(self.creat_succesful_loc))
         self.element.click()
     #得到当前页面的弹窗信息
@@ -91,7 +91,7 @@ class ScriptManagerPage(Page):
         # 点击弹窗的创建按钮
     #点击第一个脚本的修改按钮
     def click_first_updata(self):
-        print("========>>>>>>等待点击创建按钮")
+        print("========>>>>>>等待点击第一个脚本的修改按钮")
         self.element = WebDriverWait(self.driver, 10, 0.5).until(
             EC.presence_of_element_located(self.update_one_loc))
         self.element.click()
@@ -99,19 +99,19 @@ class ScriptManagerPage(Page):
         # 点击第一个脚本的修改按钮
 
     def click_upadata_success(self):
-        print("========>>>>>>等待点击创建按钮")
+        print("========>>>>>>等待点击第一个脚本的修改按钮")
         self.element = WebDriverWait(self.driver, 10, 0.5).until(
             EC.presence_of_element_located(self.update_success_loc))
         self.element.click()
         #点击第一个脚本组的删除按钮
     def click_Delete_Forst(self):
-        print("========>>>>>>等待点击创建按钮")
+        print("========>>>>>>等待点击第一个脚本组的删除按钮")
         self.element = WebDriverWait(self.driver, 10, 0.5).until(
             EC.presence_of_element_located(self.delete_group_first_loc))
         self.element.click()
        #点击删除确认按钮
     def click_Remove_Confirm(self):
-        print("========>>>>>>等待点击创建按钮")
+        print("========>>>>>>等待点击删除确认按钮")
         self.element = WebDriverWait(self.driver, 10, 0.5).until(
             EC.presence_of_element_located(self.delete_confirm_loc))
         self.element.click()

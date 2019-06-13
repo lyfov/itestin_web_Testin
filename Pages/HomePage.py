@@ -3,6 +3,7 @@ from selenium.webdriver.common.by import By
 from selenium.common.exceptions import NoSuchElementException
 from time import sleep
 from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
 
 
 class HomePage_one(Page):
@@ -16,6 +17,8 @@ class HomePage_one(Page):
     auto_manager_loc=(By.XPATH,'//*[@id="page-menu"]/div/nav/div/ul/li[3]/a/span')
     #脚本管理定位器
     scripy_home_loc=(By.XPATH,'//*[@id="page-menu"]/div/nav/div/ul/li[3]/ul/li/a')
+    # 录制脚本按钮
+    recordingBtn_loc = (By.XPATH, '//button[text()="录制脚本"]')
 
 
     def __init__(self,driver):
@@ -55,5 +58,11 @@ class HomePage_one(Page):
         sleep(2)
 
         self.driver.find_element(*self.scripy_home_loc).click()
+     #点击录制脚本
+    def click_recordingBtn(self):
+        print("========>>>>>>等待点击录制脚本按钮")
+        self.element = WebDriverWait(self.driver, 10, 0.5).until(
+            EC.presence_of_element_located(self.recordingBtn_loc))
+        self.element.click()
 
 

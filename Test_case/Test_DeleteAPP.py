@@ -6,10 +6,11 @@ from common.BasePage import *
 import pytest
 import pysnooper
 from common.configRead import configRead
+import allure
 
 class Test_DeleteApp():
     @pysnooper.snoop()
-    @pytest.mark.skip()
+
     def test_Deleteapp(self,driver):
         #登录
         print(driver)
@@ -23,4 +24,4 @@ class Test_DeleteApp():
         #9
         AppMangerPage(driver).DeleteApp("涨乐财富通")
         #断言是否删除成功
-        assert AppMangerPage(self.driver).Get_Alert_message()=="删除成功"
+        assert AppMangerPage(driver).Get_Alert_message()=="删除成功asdasdasd"

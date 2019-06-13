@@ -21,7 +21,7 @@ class Test_Script_group_creat():
         HomePage_one(driver).click_auto_script()
 
         sleep(3)
-        for i in range(1,100):
+        for i in range(1,3):
         # 点击脚本组tab
             ScriptManagerPage(driver).click_scrpt_group_tab()
             sleep(3)

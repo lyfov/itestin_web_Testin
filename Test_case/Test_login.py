@@ -5,6 +5,7 @@ from common.DriverChk import driverchk
 from common.configRead import configRead
 from common.ExcelUtil import ParseExcel
 import pytest
+import allure
 
 
 import os
