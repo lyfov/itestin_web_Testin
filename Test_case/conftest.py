@@ -9,8 +9,8 @@ def driver():
         print("========================================")
         driver = webdriver.Chrome()
         yield driver
-        driver.save_screenshot("../picture.png")
-        file = open('../test.png', 'rb').read()
-        allure.attach('test_img', file, allure.attach_type.PNG)
+        # driver.save_screenshot("../picture.png")
+        # file = open('../test.png', 'rb').read()
+        # allure.attach('test_img', file, allure.attach_type.PNG)
         driver.close()
         return driver

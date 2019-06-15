@@ -10,7 +10,7 @@ import allure
 
 class Test_DeleteApp():
     @pysnooper.snoop()
-
+    @pytest.mark.skpi()
     def test_Deleteapp(self,driver):
         #登录
         print(driver)
