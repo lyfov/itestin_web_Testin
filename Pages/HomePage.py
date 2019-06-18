@@ -19,7 +19,8 @@ class HomePage_one(Page):
     scripy_home_loc=(By.XPATH,'//*[@id="page-menu"]/div/nav/div/ul/li[3]/ul/li/a')
     # 录制脚本按钮
     recordingBtn_loc = (By.XPATH, '//button[text()="录制脚本"]')
-
+    test_manage_loc=(By.XPATH,'//*[@id="page-menu"]/div/nav/div/ul/li[2]/a/span')
+    test_for_gn_loc=(By.XPATH,'//*[@id="page-menu"]/div/nav/div/ul/li[2]/ul/li[1]/a')
 
     def __init__(self,driver):
         self.driver=driver
@@ -64,5 +65,20 @@ class HomePage_one(Page):
         self.element = WebDriverWait(self.driver, 10, 0.5).until(
             EC.presence_of_element_located(self.recordingBtn_loc))
         self.element.click()
+    #点击测试管理
 
+    def click_TestManage(self):
+        sleep(3)
+        print("========>>>>>>等待点击测试管理按钮")
+        self.element = WebDriverWait(self.driver, 10, 0.5).until(
+            EC.presence_of_element_located(self.test_manage_loc))
+        self.element.click()
+        # 点击功能测试
+
+    def click_gongneng(self):
+        sleep(3)
+        print("========>>>>>>等待点击功能测试按钮")
+        self.element = WebDriverWait(self.driver, 10, 0.5).until(
+            EC.presence_of_element_located(self.test_for_gn_loc))
+        self.element.click()
 

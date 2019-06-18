@@ -9,7 +9,7 @@ from common.configRead import configRead
 from common.ChangeHandle import *
 from Pages.OnlinePage import *
 class Test_RecordScript():
-    @pytest.mark.skip()
+    # @pytest.mark.skip()
     def test_RecordScript(self,driver):
 
         LoginPage(driver, configRead().read_username(), configRead().read_pwd()).Login()
