@@ -13,6 +13,7 @@ class Test_ForLogin():
     excel = ParseExcel("C:\\Users\\HP\\Desktop\\1.xlsx", "Sheet1")
     @pytest.mark.parametrize("username,password,tag_message",excel.getDataFromSheet())
     # @pytest.mark.skpi()
+    @pytest.mark.run(order=3)
     def test_login(self,driver,username,password,tag_message):
         print(username)
         # print(data['username'])

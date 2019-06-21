@@ -9,12 +9,14 @@ from Pages.StartTestPage import *
 class Test_Run_Test():
     #测试功能自动化测试列表的进入
     # @pytest.mark.skip()
+    @pytest.mark.run(order=7)
     def test_Run_ComeTO_Testforgn(self, driver):
         LoginPage(driver, configRead().read_username(), configRead().read_pwd()).Login()
         HomePage_one(driver).click_TestManage()
         #点击自动化功能测试按钮，进入功能测试列表
         HomePage_one(driver).click_gongneng()
 
+    @pytest.mark.run(order=8)
     def test_Run_Test(self, driver):
         LoginPage(driver, configRead().read_username(), configRead().read_pwd()).Login()
         # 主页选择项目组

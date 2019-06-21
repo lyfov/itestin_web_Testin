@@ -6,6 +6,7 @@ from Pages.AppMangerPage import *
 from common.configRead import configRead
 class Test_upload():
     # @pytest.mark.skip()
+    @pytest.mark.run(order=1)
     def test_upload(self,driver):
         LoginPage(driver,configRead().read_username(), configRead().read_pwd()).Login()
         # 主页选择项目组

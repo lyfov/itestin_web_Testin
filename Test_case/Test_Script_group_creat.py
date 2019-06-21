@@ -10,6 +10,7 @@ class Test_Script_group_creat():
 
     @pysnooper.snoop(r'C:\Users\HP\Desktop\1.log')
     @allure.step("创建脚本组选择清除数据")
+    @pytest.mark.run(order=9)
     def test_creat_group(self,driver):
 
         LoginPage(driver, configRead().read_username(), configRead().read_pwd()).Login()
@@ -44,6 +45,7 @@ class Test_Script_group_creat():
             assert ScriptManagerPage(driver).Get_Alert_message() == "操作成功"
     #修改脚本组
     # @pytest.mark.skip()
+    @pytest.mark.run(order=10)
     def test_updata_group(self, driver):
         ScriptManagerPage(driver).click_first_updata()
         sleep(3)
@@ -62,6 +64,7 @@ class Test_Script_group_creat():
         # 删除脚本组
 
     # @pytest.mark.skip()
+    @pytest.mark.run(order=11)
     def test_Remove_Group(self, driver):
         ScriptManagerPage(driver).click_Delete_Forst()
         sleep(3)

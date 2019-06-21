@@ -10,6 +10,7 @@ from common.ChangeHandle import *
 from Pages.OnlinePage import *
 class Test_RecordScript():
     # @pytest.mark.skip()
+    @pytest.mark.run(order=4)
     def test_RecordScript(self,driver):
 
         LoginPage(driver, configRead().read_username(), configRead().read_pwd()).Login()
@@ -23,6 +24,7 @@ class Test_RecordScript():
         sleep(9)
 
     @pytest.mark.skip()
+    @pytest.mark.run(order=5)
     def test_Save_Empty(self,driver):
 
         LoginPage(driver, configRead().read_username(), configRead().read_pwd()).Login()
@@ -38,6 +40,7 @@ class Test_RecordScript():
         ChangeHandle(driver).change_handle_old()
         sleep(9)
 
+    @pytest.mark.run(order=6)
     def test_Creat_Script(self, driver):
         LoginPage(driver, configRead().read_username(), configRead().read_pwd()).Login()
         # 主页选择项目组
