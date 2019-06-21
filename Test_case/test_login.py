@@ -10,7 +10,10 @@ import allure
 
 import os
 class Test_ForLogin():
-    excel = ParseExcel("C:\\Users\\HP\\Desktop\\1.xlsx", "Sheet1")
+    proDir = os.path.split(os.path.realpath(__file__))[0]
+    proDir=proDir+"/1.xlsx"
+    print(proDir)
+    excel = ParseExcel(proDir, "Sheet1")
     @pytest.mark.parametrize("username,password,tag_message",excel.getDataFromSheet())
     # @pytest.mark.skpi()
     @pytest.mark.run(order=3)

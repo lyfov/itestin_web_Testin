@@ -132,3 +132,4 @@ class Page(object):
     def clickEnterNoElement(self):
         ActionChains(self.driver).send_keys(Keys.ENTER).perform()
 
+

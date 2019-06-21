@@ -4,10 +4,13 @@ from Pages.LoginPage import *
 from Pages.HomePage import *
 from Pages.AppMangerPage import *
 from common.configRead import configRead
+import os,sys
 class Test_upload():
     # @pytest.mark.skip()
     @pytest.mark.run(order=1)
     def test_upload(self,driver):
+        prodir=os.path.split(os.path.realpath(__file__))[0]
+        prodir=prodir+"/1.apk"
         LoginPage(driver,configRead().read_username(), configRead().read_pwd()).Login()
         # 主页选择项目组
         HomePage_one(driver).choise_project()
@@ -16,5 +19,5 @@ class Test_upload():
         # 应用管理页面点击上传
         AppMangerPage(driver).upload_click()
         # 上传所选择的应用
-        AppMangerPage(driver).upload_app_byname(u"D:\\1.apk")
+        AppMangerPage(driver).upload_app_byname(prodir)
         sleep(5)
