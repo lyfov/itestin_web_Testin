@@ -1,11 +1,14 @@
-from Pages.LoginPage import *
-from Pages.HomePage import *
-from common.BasePage import *
 import allure
-import pytest
 import pysnooper
-from common.configRead import configRead
+import pytest
+
+from Pages.HomePage import *
+from Pages.LoginPage import *
 from Pages.ScriptManagerPage import ScriptManagerPage
+from common.BasePage import *
+from common.configRead import configRead
+
+
 class Test_Script_group_creat():
 
     @pysnooper.snoop(r'C:\Users\HP\Desktop\1.log')
