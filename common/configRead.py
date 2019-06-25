@@ -37,7 +37,7 @@ class configRead():
 
     def read_pwd(self):
         self.cf = configparser.ConfigParser()
-        self.cf.read(r'C:\Users\HP\PycharmProjects\itestin_web_tencent\common\config.ini', encoding='utf-8')
+        self.cf.read(self.proDir, encoding='utf-8')
         return self.cf.get("email", "pwd")
 
 if __name__=="__main__":
