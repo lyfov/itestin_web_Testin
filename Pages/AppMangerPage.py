@@ -86,12 +86,20 @@ class AppMangerPage(Page):
 
 
     #click download button
-
-    def click_test_node(self):
+    def click_download(self):
 
         self.element = WebDriverWait(self.driver, 10, 0.5).until(
             EC.presence_of_element_located(self.dowlond_loc))
         self.element.click()
+
+
+    #点击测试记录
+    def click_test_node(self):
+
+        self.element = WebDriverWait(self.driver, 10, 0.5).until(
+            EC.presence_of_element_located(self.testnode))
+        self.element.click()
+
     #点击记录中功能测试
 
     def click_node_gongneng(self):

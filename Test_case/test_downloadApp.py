@@ -29,8 +29,9 @@ class Test_DeleteApp():
         AppMangerPage(driver).click_download()
         sleep(20)
 
-    @pytest.mark.run(order=15)
-    def test_nodefortest_gongneng(self, driver):
+
+    @pytest.mark.run(order=14)
+    def test_Download_android(self, driver):
         # 上传APP
         LoginPage(driver, configRead().read_username(), configRead().read_pwd()).Login()
         # 主页选择项目组
@@ -40,12 +41,11 @@ class Test_DeleteApp():
         # 应用管理页面点击上传
         AppMangerPage(driver).upload_click()
         # 上传所选择的应用
-        AppMangerPage(driver).upload_app_byname(u"D:\\1.apk")
+        AppMangerPage(driver).upload_app_byname(u"D:\\3.ipa")
         sleep(50)
-        #返回到应用管理
         AppMangerPage(driver).click_back_APPmanage()
-
-        #点击测试管理
+        AppMangerPage(driver).click_download()
+        sleep(20)
 
 
 
