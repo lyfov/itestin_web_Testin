@@ -46,4 +46,15 @@ class Test_Run_Test():
         #点击提交测试
         StartTestPage(driver).click_subtest()
 
-
+    def test_Run_Test(self, driver):
+        LoginPage(driver, configRead().read_username(), configRead().read_pwd()).Login()
+        # 主页选择项目组
+        HomePage_one(driver).choise_project()
+        sleep(3)
+        # HomePage_one(driver).click_TestManage()
+        # 点击自动化功能测试按钮，进入功能测试列表
+        HomePage_one(driver).click_gongneng()
+        #筛选功能
+        HomePage_one(driver).click_appname()
+        #点击定时任务
+        HomePage_one(driver).click_dingshirenwu()

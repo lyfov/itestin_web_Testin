@@ -2,6 +2,7 @@ from common.BasePage import Page
 from selenium.webdriver.common.by import By
 from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
 from time import sleep
 from selenium import webdriver
 class AppMangerPage(Page):
@@ -14,8 +15,18 @@ class AppMangerPage(Page):
     w=(By.CLASS_NAME,'page-main')
     jqurey_button_loc=(By.XPATH,'//button[contains(text(),"查询")]')
     APPDELETE_True_loc=(By.XPATH,'//button[contains(text(),"确认")]')
+    appback_loc=(By.XPATH,'//*[@id="page-menu"]/div/nav/div/ul/li[1]/a/span')
+    dowlond_loc=(By.XPATH,'//*[@id="cp_quota"]/div/table/tbody/tr[2]/td[8]/a[1]')
+    #测试记录按钮
+    testnode=(By.XPATH,'//*[@id="cp_quota"]/div/table/tbody/tr[2]/td[8]/div/a')
 
+    #功能测试
+    testbode_gongneng=(By.XPATH,'//*[@id="cp_quota"]/div/table/tbody/tr[2]/td[8]/div/ul/li[1]/a')
+    #兼容测试
+    testbode_jianrong = (By.XPATH, '//*[@id="cp_quota"]/div/table/tbody/tr[2]/td[8]/div/ul/li[2]/a')
 
+    #云监控测试
+    testbode_yunjiankong = (By.XPATH, '//*[@id="cp_quota"]/div/table/tbody/tr[2]/td[8]/div/ul/li[3]/a')
     def __init__(self, driver):
         self.driver = driver
         # self.driver=webdriver.Chrome()
@@ -68,8 +79,35 @@ class AppMangerPage(Page):
         # self.driver=webdriver.Chrome()
         w= self.driver.switch_to_alert().text
         return w
+        #点击左上角应用管理，回到应用管理页面
+    def click_back_APPmanage(self):
+
+        self.find_element(*self.appback_loc).click()
 
 
-        # WebDriverWait(self.driver,100).until(lambda s:s.find_element(*self.button_sub_loc))
+    #click download button
 
+    def click_test_node(self):
 
+        self.element = WebDriverWait(self.driver, 10, 0.5).until(
+            EC.presence_of_element_located(self.dowlond_loc))
+        self.element.click()
+    #点击记录中功能测试
+
+    def click_node_gongneng(self):
+        self.element = WebDriverWait(self.driver, 10, 0.5).until(
+            EC.presence_of_element_located(self.testbode_gongneng))
+        self.element.click()
+        # 点击记录中兼容测试
+
+    def click_node_jianrong(self):
+        self.element = WebDriverWait(self.driver, 10, 0.5).until(
+            EC.presence_of_element_located(self.testbode_jianrong))
+        self.element.click()
+
+    # 点击记录中云监控测试
+
+    def click_node_yunjiankong(self):
+        self.element = WebDriverWait(self.driver, 10, 0.5).until(
+            EC.presence_of_element_located(self.testbode_yunjiankong))
+        self.element.click()
