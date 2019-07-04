@@ -9,10 +9,11 @@ sys.path.append((os.path.abspath(os.path.join(os.path.dirname(__file__), '../'))
 def driver():
 
         chrome_options=webdriver.ChromeOptions()
+        chrome_options.add_argument('--no-sandbox')
         chrome_options.add_argument('--headless')
         chrome_options.add_argument('--disable-gpu')
         print("========================================")
-        driver = webdriver.Chrome(chrome_options=chrome_options)
+        driver = webdriver.Chrome(options=chrome_options)
 
         # driver =webdriver.Remote(
         # command_executor="http://10.32.25.59:5555/wd/hub",
