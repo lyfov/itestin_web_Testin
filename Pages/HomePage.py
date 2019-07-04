@@ -22,6 +22,11 @@ class HomePage_one(Page):
     test_manage_loc=(By.XPATH,'//*[@id="page-menu"]/div/nav/div/ul/li[2]/a/span')
     test_for_gn_loc=(By.XPATH,'//*[@id="page-menu"]/div/nav/div/ul/li[2]/ul/li[1]/a')
 
+    #功能tab页面的元素定位器
+    appname_loc = (By.XPATH,'//*[@id="auto_list"]/div[1]/div/button/span[1]')
+    app_one_loc =(By.XPATH,'//*[@id="auto_list"]/div[1]/div/div/ul/li[2]/a/span[1]')
+    dingshirenwu_loc=(By.XPATH,'//*[@id="showTaskList"]/div[2]/ul/li[2]/a')
+
     def __init__(self,driver):
         self.driver=driver
         print("首页初始化完成")
@@ -82,3 +87,24 @@ class HomePage_one(Page):
             EC.presence_of_element_located(self.test_for_gn_loc))
         self.element.click()
 
+        #点击应用名称
+    def click_appname(self):
+        sleep(3)
+        print("========>>>>>>等待点击应用名称")
+        self.element = WebDriverWait(self.driver, 10, 0.5).until(
+            EC.presence_of_element_located(self.appmanage_loc))
+        self.element.click()
+        #点击第一个应用名称
+    def click_appnameone(self):
+        sleep(3)
+        print("========>>>>>>等待点击第一个应用")
+        self.element = WebDriverWait(self.driver, 10, 0.5).until(
+            EC.presence_of_element_located(self.app_one_loc))
+        self.element.click()
+        #点击定时任务
+    def click_dingshirenwu(self):
+        sleep(3)
+        print("========>>>>>>等待点击第一个应用")
+        self.element = WebDriverWait(self.driver, 10, 0.5).until(
+            EC.presence_of_element_located(self.dingshirenwu_loc))
+        self.element.click()
