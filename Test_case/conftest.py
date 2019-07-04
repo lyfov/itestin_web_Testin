@@ -15,10 +15,7 @@ def driver():
         print("========================================")
         driver = webdriver.Chrome(options=chrome_options)
 
-        # driver =webdriver.Remote(
-        # command_executor="http://10.32.25.59:5555/wd/hub",
-        # desired_capabilities={"browserName": "chrome"}
-        # )
+
         yield driver
         # driver.save_screenshot("../picture.png")
         # file = open('../test.png', 'rb').read()
