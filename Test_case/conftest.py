@@ -15,15 +15,12 @@ def driver():
         # 增加linux环境下启动浏览器的权限
         # chrome_options.add_argument('--no-sandbox')
         ##不需要可视化启动浏览器，进行后台运行
-        # chrome_options.add_argument('--headless')
-        # # chrome_options.add_argument('--disable-gpu')
-        # chrome_options.add_argument('--window-size=1366,768')
+        chrome_options.add_argument('--headless')
+        chrome_options.add_argument('--disable-gpu')
+        chrome_options.add_argument('--window-size=1366,768')
         print("========================================")
         driver = webdriver.Chrome(options=chrome_options)
-
-
         yield driver
-
         # driver.save_screenshot("../picture"+i+".png")
         # i=i+1
         # file = open('../test.png', 'rb').read()
