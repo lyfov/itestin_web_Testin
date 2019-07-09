@@ -1,10 +1,13 @@
-from common.BasePage import Page
-from selenium import webdriver
-from selenium.webdriver.common.by import By
-from selenium.common.exceptions import NoSuchElementException
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
 from time import sleep
+
+from selenium.common.exceptions import NoSuchElementException
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.support.ui import WebDriverWait
+
+from common.BasePage import Page
+
+
 class ManagePage(Page):
     rukou_loc=(By.XPATH,'//*[@id="bs-example-navbar-collapse-1"]/ul[1]/li[2]/a/span')
     #点击查看详情连接
@@ -62,6 +65,7 @@ class ManagePage(Page):
             sleep(3)
             self.element = WebDriverWait(self.driver, 10, 0.5).until(
                 EC.presence_of_element_located(self.name_loc))
+            self.element.clear()
             self.element.send_keys(value)
         except NoSuchElementException:
             print("名称输入框")

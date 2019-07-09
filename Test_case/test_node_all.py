@@ -1,12 +1,11 @@
-from Pages.LoginPage import *
-from Pages.HomePage import *
-from Pages.AppMangerPage import *
-from selenium import webdriver
-from common.BasePage import *
 import pytest
-import pysnooper
+
+from Pages.AppMangerPage import *
+from Pages.HomePage import *
+from Pages.LoginPage import *
+from common.BasePage import *
 from common.configRead import configRead
-import allure
+
 
 class Test_NodeApp():
     @pytest.mark.run(order=15)
@@ -26,7 +25,6 @@ class Test_NodeApp():
         AppMangerPage(driver).click_back_APPmanage()
         #点击功能测试记录
         AppMangerPage(driver).click_node_gongneng()
-
 
     @pytest.mark.run(order=16)
     def test_nodefortest_jianrong(self, driver):

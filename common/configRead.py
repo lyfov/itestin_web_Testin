@@ -40,6 +40,16 @@ class configRead():
         self.cf.read(self.proDir, encoding='utf-8')
         return self.cf.get("email", "pwd")
 
+    def read_manage_username(self):
+        self.cf = configparser.ConfigParser()
+        self.cf.read(self.proDir, encoding='utf-8')
+        return self.cf.get("managerusr", "uesrname")
+
+    def read_manage_pwd(self):
+        self.cf = configparser.ConfigParser()
+        self.cf.read(self.proDir, encoding='utf-8')
+        return self.cf.get("managerusr", "pwd")
+
 if __name__=="__main__":
     configRead().read_driver()
     # configRead().read_url()
