@@ -1,9 +1,13 @@
-from common.BasePage import Page
-from selenium.webdriver.common.by import By
-from selenium.common.exceptions import NoSuchElementException
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
 from time import sleep
+
+from selenium.common.exceptions import NoSuchElementException
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.support.ui import WebDriverWait
+
+from common.BasePage import Page
+
+
 class ScriptManagerPage(Page):
     script_group_loc_tab=(By.XPATH,"//li/a[contains(text(),'脚本组')]")
     creat_scrpt_group_loc=(By.XPATH,"//div/button[contains(text(),'创建脚本组')]")
@@ -109,6 +113,7 @@ class ScriptManagerPage(Page):
         self.element = WebDriverWait(self.driver, 10, 0.5).until(
             EC.presence_of_element_located(self.delete_group_first_loc))
         self.element.click()
+        # self.driver.execute_script("arguments[0].click();",self.element)
        #点击删除确认按钮
     def click_Remove_Confirm(self):
         print("========>>>>>>等待点击删除确认按钮")

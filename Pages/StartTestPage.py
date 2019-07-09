@@ -1,18 +1,18 @@
-from common.BasePage import Page
-from selenium.webdriver.common.by import By
-from selenium.common.exceptions import NoSuchElementException
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
-from selenium.webdriver.common.action_chains import ActionChains
-from selenium import webdriver
-
 from time import sleep
+
+from selenium.common.exceptions import NoSuchElementException
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.support.ui import WebDriverWait
+
+from common.BasePage import Page
+
 
 class StartTestPage(Page):
 
     Start_Test_loc=(By.XPATH,'//*[@id="showTaskList"]/div[1]/div/button')
     choose_app_input_loc=(By.XPATH,'//*[@id="appSelect-form"]/div[1]/div[1]/div/button/span[1]')
-    chosse_wuxianji_loc=(By.XPATH,'//*[@id="appSelect-form"]/div[1]/div[1]/div/div/ul/li[4]/a/span[1]')
+    chosse_wuxianji_loc = (By.XPATH, "//a/span[contains(text(),'无限极中国')]")
     query_app_loc=(By.XPATH,'//*[@id="search"]')
     list_wuxianji_loc =(By.XPATH,'//*[@id="content"]/table/tbody/tr[2]/td[1]')
     next_step_loc=(By.XPATH,'//*[contains(text(),"下一步")]')
@@ -20,8 +20,11 @@ class StartTestPage(Page):
     devices_all_loc=(By.XPATH,'//*[@id="select_device_form"]/div/div[2]/div[1]/div[1]/button[1]')
     task_name_loc=(By.XPATH,'//*[@id="descr"]')
     # devices_next_loc=(By.XPATH,'//*[@id="select_device_form"]/div/div[2]/div[3]/div/button[2]')
+    # 设备的下一步按钮
     devices_next_loc=(By.CSS_SELECTOR,'#select_device_form > div > div.panel.panel-default.grid-device > div.page-operation-bar.fix > div > button.btn.btn-primary.nextStep')
     subtest_loc=(By.XPATH,'/html/body/div[1]/div[4]/div/button[2]')
+    # 提测成功后查看任务按钮
+    check_task_loc = (By.XPATH, '//div/a[contains(text(),"查看任务")]')
 
 
 
@@ -44,6 +47,7 @@ class StartTestPage(Page):
             self.element = WebDriverWait(self.driver, 10, 0.5).until(
                 EC.presence_of_element_located(self.choose_app_input_loc))
             self.element.click()
+            print("输入选择app成功")
         except NoSuchElementException as c:
             print("aaaa")
         try:
@@ -117,3 +121,12 @@ class StartTestPage(Page):
         except NoSuchElementException as c:
             print("提交测试按钮")
         sleep(3)
+
+    def click_check_task(self):
+        print("=========任务提交成功=======")
+        try:
+            self.element = WebDriverWait(self.driver, 10, 0.5).until(
+                EC.presence_of_element_located(self.check_task_loc))
+            self.element.click()
+        except NoSuchElementException as c:
+            print("未找到查看任务按钮")

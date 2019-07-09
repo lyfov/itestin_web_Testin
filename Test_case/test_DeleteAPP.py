@@ -1,17 +1,19 @@
-from Pages.LoginPage import *
-from Pages.HomePage import *
-from Pages.AppMangerPage import *
-from selenium import webdriver
-from common.BasePage import *
-import pytest
-import pysnooper
-from common.configRead import configRead
 import allure
+import pysnooper
+import pytest
+
+from Pages.AppMangerPage import *
+from Pages.HomePage import *
+from Pages.LoginPage import *
+from common.BasePage import *
+from common.configRead import configRead
+
 
 class Test_DeleteApp():
     @pysnooper.snoop()
     # @pytest.mark.skpi()
     @pytest.mark.run(order=2)
+    @allure.feature("删除android应用")
     def test_Deleteapp_android(self,driver):
         #登录
         print(driver)
@@ -28,6 +30,7 @@ class Test_DeleteApp():
         assert AppMangerPage(driver).Get_Alert_message()=="删除成功asdasdasd"
 
     @pytest.mark.run(order=14)
+    @allure.feature("删除ios应用")
     def test_Deleteapp_ios(self, driver):
         # 登录
         print(driver)

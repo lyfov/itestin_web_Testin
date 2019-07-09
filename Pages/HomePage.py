@@ -1,9 +1,11 @@
-from common.BasePage import Page
-from selenium.webdriver.common.by import By
-from selenium.common.exceptions import NoSuchElementException
 from time import sleep
-from selenium.webdriver.support.ui import WebDriverWait
+
+from selenium.common.exceptions import NoSuchElementException
+from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.support.ui import WebDriverWait
+
+from common.BasePage import Page
 
 
 class HomePage_one(Page):
@@ -97,14 +99,14 @@ class HomePage_one(Page):
         #点击第一个应用名称
     def click_appnameone(self):
         sleep(3)
-        print("========>>>>>>等待点击第一个应用")
+
         self.element = WebDriverWait(self.driver, 10, 0.5).until(
             EC.presence_of_element_located(self.app_one_loc))
         self.element.click()
         #点击定时任务
     def click_dingshirenwu(self):
         sleep(3)
-        print("========>>>>>>等待点击第一个应用")
+
         self.element = WebDriverWait(self.driver, 10, 0.5).until(
             EC.presence_of_element_located(self.dingshirenwu_loc))
         self.element.click()
